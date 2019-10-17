@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css?family=Modak&display=swap');
+
+
+
+a {
+    text-decoration:none;
+    color:white;
+}
+
+.header{
+    background-color: #444342;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+h1 {
+    font-size: 3em;
+    color: #fff;
+    text-align:center;
+    padding: 0.4em;
+    text-transform: uppercase;
+    font-weight:bold;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h2 {
+    font-family: 'Modak', cursive;
+    font-size: 2.9em;
+}
+
+.city {
+    position: relative;
+    width: 100%;
+}
+
+.city-name {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: opacity .2s, visibility .2s;
+} 
+
+.city:hover .city-name{
+    visibility: visible;
+    opacity: 1;
+}
+
+.city-name a {
+    transition: .2s;
+    transform: translateY(1em);
+}
+
+.city:hover .city-name a {
+    transform: translateY(0);
+}
+
+.city-photo {
+    width: 100%;
+}
