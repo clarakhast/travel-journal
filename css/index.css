@@ -69,3 +69,9 @@ h2 {
 .city-photo {
     width: 100%;
 }
+
+@media screen and (max-width:45em){
+    h1{
+        font-size: 2em;
+    }
+}
